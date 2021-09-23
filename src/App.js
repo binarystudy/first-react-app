@@ -33,9 +33,9 @@ function App() {
   useEffect(() => {
         loadModel()
     }, [])
-  // if (isModelLoading) {
-  //     return <h2>Model Loading...</h2>
-  // }
+  if (isModelLoading) {
+      return <h2>Model Loading...</h2>
+  }
   
   return (
     <div className="App">
